@@ -1,0 +1,684 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'poppins', sans-serif;
+}
+*::-webkit-scrollbar{
+    display: none;
+}
+.headerImgContainer {
+    display: flex;
+    width: 100vw;
+    height: fit-content;
+}
+.headerImgContainer img {
+    width: 100vw;
+    height: fit-content;
+}
+.pageHeadingContainer{
+    width: 100vw;
+    display: flex;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.pageHeadingText{
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 600;
+    color: #7b1417;
+}
+.pageBannerContainer{
+    display: flex;
+    width: 100vw;
+    height: fit-content;
+    margin-top: 20px;
+}
+.pageBannerContainer img{
+    width: 100vw;
+    height: fit-content;
+}
+.pageParagraphContainer{
+    width: fit-content;
+    display: flex;
+    height: fit-content;
+    padding: 0 10vw;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.pageParagraphText{
+    font-size: 1.3rem;
+    text-align: center;
+}
+.SlidesContainer {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.slide1 {
+    /* width: 95vw; */
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background-color: #f7eccb;
+}
+.slide1H1{
+    font-size: 3rem;
+    font-weight: 600;
+    color: #7b1417;
+}
+.slide1H2{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: -5px;
+    color: #7b1417;
+}
+
+.slide2 {
+    width: 95vw;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background-color: #f7eccb;
+}
+.slide2HeadingContainer{
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: 95vw;
+}
+.slide2HeadingText{
+    color: #7b1417;
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: 600;
+}
+.slide2ChoicesContainer{
+    height: fit-content;
+    width: 95vw;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 150px;
+    margin-top: 10px;
+}
+.slide2Choice{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    opacity: .5;
+    transition: all ease-in .3s;
+}
+.slide2ChoiceImgContainer{
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    width: fit-content;
+    justify-content: center;
+    margin-top: 25px;
+}
+.slide2ChoiceImgContainer img{
+    height: 150px;
+    width: auto;
+}
+.slide2ChoiceTextContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    width: 150px;
+}
+.slide2ChoiceText{
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 500;
+    color: #7b1417;
+}
+.slide2Choice:hover{
+    opacity: 1;
+}
+
+
+
+
+.slide3 {
+    width: 95vw;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background-color: #f7eccb;
+}
+.slide3HeadingContainer{
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: 95vw;
+}
+.slide3HeadingText{
+    color: #7b1417;
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: 600;
+}
+.slide3ChoicesContainer{
+    height: fit-content;
+    width: 95vw;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 150px;
+    margin-top: 10px;
+}
+.slide3Choice{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.slide3ChoiceImgContainer{
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    width: fit-content;
+    justify-content: center;
+    margin-top: 25px;
+}
+.slide3ChoiceImgContainer img{
+    height: 150px;
+    width: auto;
+}
+.slide3ChoiceTextContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    width: 150px;
+}
+.slide3ChoiceText{
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 500;
+    color: #7b1417;
+}
+
+.slide4 {
+    width: 95vw;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background-color: #f7eccb;
+}
+.slide4HeadingContainer{
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: 95vw;
+}
+.slide4HeadingText{
+    color: #7b1417;
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: 600;
+}
+.slide4ChoicesContainer{
+    height: fit-content;
+    width: 95vw;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 150px;
+    margin-top: 10px;
+}
+.slide4Choice{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.slide4ChoiceImgContainer{
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    width: fit-content;
+    justify-content: center;
+    margin-top: 25px;
+}
+.slide4ChoiceImgContainer img{
+    height: 150px;
+    width: auto;
+}
+.slide4ChoiceTextContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    width: 150px;
+}
+.slide4ChoiceText{
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 500;
+    color: #7b1417;
+}
+
+.slide5 {
+    /* width: 95vw; */
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background-color: #f7eccb;
+}
+.slide5HeadingContainer{
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: 95vw;
+}
+.slide5HeadingText{
+    color: #7b1417;
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: 600;
+}
+.slide5ChoicesContainer{
+    height: fit-content;
+    width: 95vw;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 150px;
+    margin-top: 10px;
+}
+.slide5Choice{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.slide5ChoiceImgContainer{
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    width: fit-content;
+    justify-content: center;
+    margin-top: 25px;
+}
+.slide5ChoiceImgContainer img{
+    height: 150px;
+    width: auto;
+}
+.slide5ChoiceTextContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    width: 150px;
+}
+.slide5ChoiceText{
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 500;
+    color: #7b1417;
+}
+
+
+.slide6 {
+    /* width: 95vw; */
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background-color: #f7eccb;
+}
+.slide6HeadingContainer{
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: 95vw;
+}
+.slide6HeadingText{
+    color: #7b1417;
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: 600;
+}
+.starsContainer{
+    display: flex;
+    height: fit-content;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.star {
+    font-size: 4rem;
+    fill: #fab005;
+    opacity: .4;
+    cursor: pointer;
+}
+.slide7{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+}
+.slide7Container{
+    display: flex;
+    gap: 100px;
+}
+.slide7Left, .slide7Right{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: start;
+    justify-content: left;
+    width: 50%;
+}
+.nameDiv, .phoneDiv, .ageDiv, .emailDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: left;
+    width: 50%;
+}
+.slide7Heading{
+    color: #7b1417;
+    font-size: 2rem;
+    text-align: left;
+    width: 100%;
+    font-weight: 600;
+    width: 22vw;
+}
+.slide7Input{
+    border: none;
+    background-color: #7b141715;
+    border-radius: 15px;
+    font-size: 1.5rem;
+    padding: 10px 30px;
+    margin-top: 10px;
+    width: 22vw;
+}
+.slide8{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.slide8SubHeadingContainer{
+    display: flex;
+    width: fit-content;
+}
+.slide8SubHeadingText{
+    text-align: center;
+    color: #7b1417;
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+.couponDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 80px;
+}
+.couponCode{
+    background-color: #f1dda4;
+    border-radius: 30px;
+    border: 2px dashed #7b1417;
+    color: #7b1417;
+    padding: 10px 30px;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+
+.slide1 button, .slide2 button, .slide3 button, .slide4 button, .slide5 button, .slide6 button, .slide7 button, .slide8 button{
+    padding: 5px 50px;
+    border: none;
+    margin-top: 30px;
+    font-size: 1.2rem;
+    background-color: #7b1417;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+.slides-wrapper {
+    display: flex;
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+.slide {
+    width: 95vw;
+    height: 450px;
+    flex-shrink: 0;
+    display: flex;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background-color: #f7eccb;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: fit-content;
+    gap: 50px;
+}
+
+
+@media(max-width:770px){
+    .pageParagraphContainer {
+        padding: 0 3vw;
+    }
+    .pageParagraphText {
+        font-size: 1rem;
+    }
+    .slide {
+        height: 350px;
+    }
+    .slide1H1 {
+        font-size: 2.5rem;
+    }
+    .slide1H2 {
+        font-size: 1.6rem;
+    }
+    .slide1 button, .slide2 button, .slide3 button, .slide4 button, .slide5 button, .slide6 button, .slide7 button, .slide8 button {
+        padding: 6px 63px;
+        margin-top: 15px;
+    }
+    .slide2ChoicesContainer {
+        gap: 67px;
+    }
+    .slide2ChoiceImgContainer img {
+        height: 104px;
+    }
+    .slide2ChoicesContainer {
+        margin-top: 0px;
+    }
+    .buttons {
+        gap: 62px;
+    }
+    .starsContainer{
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+    .slide7Heading {
+        width: 30vw;
+        font-size: 1.5rem;
+    }
+    .slide7Input {
+        font-size: 1.1rem;
+        padding: 7px 18px;
+        width: 32vw;
+    }
+    .slide7Container {
+        gap: 58px;
+    }
+    .couponDiv {
+        margin-top: 25px;
+    }
+}
+@media(max-width:450px){
+    .pageHeadingText {
+        font-size: 1.5rem;
+    }
+    .pageParagraphText {
+        font-size: .8rem;
+    }
+    .slide2ChoicesContainer {
+        gap: 7px;
+    }
+    .slide2ChoiceImgContainer img {
+        height: 84px;
+    }
+    .slide2ChoiceText {
+        font-size: .8rem;
+    }
+    .slide2ChoiceTextContainer {
+        width: 123px;
+    }
+    .slide1 button, .slide2 button, .slide3 button, .slide4 button, .slide5 button, .slide6 button, .slide7 button, .slide8 button {
+        padding: 4px 28px;
+        margin-top: 26px;
+    }
+    .buttons {
+        gap: 27px;
+    }
+    .slide2HeadingText {
+        font-size: 1.6rem;
+    }
+    .starsContainer {
+        margin-top: 38px;
+        margin-bottom: 38px;
+    }
+    .star {
+        font-size: 3.4rem;
+    }
+    .slide7Container {
+        gap: 22px;
+    }
+    .slide7Heading {
+        width: 40vw;
+    }
+    .slide7Left, .slide7Right {
+        gap: 21px;
+    }
+    .slide7Heading {
+        font-size: 1.3rem;
+    }
+    .slide7Input {
+        font-size: .9rem;
+        padding: 7px 12px;
+        width: 36vw;
+    }
+    .slide7 {
+        gap: 16px;
+    }
+    .slide2HeadingText {
+        font-size: 1.8rem;
+    }
+    .slide8SubHeadingText {
+       font-size: 1.1rem;
+    }
+    .slide8 {
+        gap: 9px;
+    }
+    .couponDiv {
+        margin-top: 31px;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .couponCode {
+        background-color: #f1dda4;
+        border-radius: 30px;
+        border: 2px dashed #7b1417;
+        color: #7b1417;
+        padding: 10px 30px;
+        font-weight: 600;
+        font-size: 1.8rem;
+    }
+    .couponDiv {
+        margin-top: 16px;
+    }
+}
+@media(max-width:415px){
+    .slide2HeadingText {
+        font-size: 1.5rem;
+    }
+    .slide2ChoiceImgContainer img {
+        height: 75px;
+    }
+    .slide2ChoiceText {
+        font-size: .7rem;
+    }
+    .slide2ChoiceTextContainer {
+        width: 105px;
+    }
+    .star {
+        font-size: 3rem;
+    }
+    .slide1 button, .slide2 button, .slide3 button, .slide4 button, .slide5 button, .slide6 button, .slide7 button, .slide8 button {
+        margin-top: 15px;
+    }
+    .slide7Container {
+        gap: 18px;
+    }
+    .slide7Input {
+        width: 34vw;
+    }
+    .starsContainer {
+        margin-bottom: 23px;
+    }
+    .slide7Heading {
+        font-size: 1.1rem;
+    }
+    .slide7Input {
+        font-size: .8rem;
+    }
+    .buttons {
+        gap: 12px;
+        font-size: 1rem;
+    }
+    .couponCode {
+        border-radius: 19px;
+        padding: 6px 19px;
+        font-size: 1.5rem;
+    }
+    .slide8SubHeadingText {
+        font-size: 1rem;
+    }
+    .slide {
+        height: 289px;
+    }
+}
